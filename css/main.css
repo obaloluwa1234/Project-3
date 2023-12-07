@@ -1,0 +1,61 @@
+.header{
+    padding: 90px;
+    text-align: center;
+    background-color: turquoise;
+    color: black;
+}
+.header h1{
+font-size: 50px;
+}
+.navbar{
+    overflow: hidden;
+    background-color: chocolate;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 16px 22px;
+    text-decoration: none;
+}
+.navbar a.right {
+    float: right;
+}
+.navbar a:hover{
+    background-color: azure;
+    color: black;
+}
+*{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 30s%;
+    background-color: blueviolet;
+    padding: 20px;
+}
+.main{
+    flex: 70%;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+@media screen and (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar a{
+        float: none;
+        width: 100%;
+    }
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: brown;
+}
